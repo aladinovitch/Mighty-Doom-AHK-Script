@@ -67,6 +67,13 @@ This AutoHotkey script offers the following shortcuts:
 1. Unplug the USB.
 1. To disable the wireless connection on all devices, you can use the `adb disconnect` command from a terminal.
 
+## Caution
+- The scripts designed to be used while playing the stages, where you need the CTRL held down (finger press). However, the script needs to be disabled when you are in the menu, as there the finger won't be always pressed.
+
+- To release the CTRL press the ALT key. Or F1 to exit the script entirely.
+
+- It is also important to note that sometimes the script may cause the CTRL key to be held down in other applications, such as the web browser. If this happens, simply stop the script and click the CTRL key once.
+
 
 # Keystrokes
 
@@ -84,6 +91,13 @@ The script will maintain the CTRL key held down. Therefore, each keystroke will 
 The secondary and ultimate abilities are already implemented in the game.
 - E: Secondary
 - F: Ultimate
+
+| Abilities | Night Sentinel | The Seraphim |
+| :-:   | :-:      | :-:      |
+| ![perks](https://user-images.githubusercontent.com/8851260/235378372-c29b3540-7c72-4e31-8ef5-40a4c8a89d8f.jpg) | ![sentinel](https://user-images.githubusercontent.com/8851260/235380308-64e8c653-102f-453f-9c7e-6d9dd709cda0.jpg) | ![seraphim](https://user-images.githubusercontent.com/8851260/235380311-0c04ce4e-2f2c-49f5-b4f5-b2d2f691a930.jpg) |
+| Mod-Bot Spin | Skip animation | Skip animation |
+| ![wheel](https://user-images.githubusercontent.com/8851260/235380320-a05c4164-a655-4bdf-8cc6-c527c6840e22.jpg) | ![skip1](https://user-images.githubusercontent.com/8851260/235380313-8b8b8a29-e188-4e92-811f-83b199058b59.jpg) | ![skip2](https://user-images.githubusercontent.com/8851260/235380316-2c1b6090-01d2-4ce7-a8b9-04be566d2e55.jpg) |
+
 
 
 # Development
