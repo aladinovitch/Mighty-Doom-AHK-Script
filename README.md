@@ -81,9 +81,9 @@ The script will maintain the CTRL key held down. Therefore, each keystroke will 
 
 ## Secondary and ultimate abilities
 
-Secondary and ultimate abilities are already implemented in the game.
+The secondary and ultimate abilities are already implemented in the game.
 - E: Secondary
-- R: Ultimate
+- F: Ultimate
 
 
 # Development
