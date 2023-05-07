@@ -9,11 +9,10 @@ HotIfWinActive DeviceName
 ; The current resolution is 1080 x 2400.
 ; These values are obtained from the AHK Window spy.
 ; The values need to be adjusted to match your mobile device's resolution.
-DPadCenter := { x: 216, y: 742 }
-PerkScreenLocations := [perk1 := { x: 72, y: 520 }, perk2 := { x: 216, y: 520 }, perk3 := { x: 368, y: 520 }
-, perk1Sentinel := { x: 130, y: 640 }, perk2Sentinel := { x: 300, y: 640 }
-, spinningWheel := { x: 216, y: 864 }
-, seraphimReject := { x: 110, y: 866 }, seraphimAccept := { x: 320, y: 866 }]
+DPadCenter := { x: 210, y: 744 }
+PerkScreenLocations := [
+    perk1 := { x: 108, y: 600 }, perk2 := { x: 260, y: 600 }, perk3 := { x: 348, y: 524 }
+    , seraphimReject := { x: 140, y: 868 }, seraphimAccept := { x: 280, y: 868 }]
 
 ; Hotkey map
 KeyResetControl := "Q"
@@ -36,9 +35,9 @@ class Model {
         idxs := []
         switch key {
             case KeyAbility1:
-                idxs := [1, 4, 6, 7]
+                idxs := [1, 4]
             case KeyAbility2:
-                idxs := [2, 5, 8]
+                idxs := [2, 5]
             case KeyAbility3:
                 idxs := [3]
         }
@@ -273,6 +272,7 @@ Hotkey("^" KeyExit, AppExit)
 ; This script periodically checks if the 'scrcpy' window is still active. Here named DeviceName.
 ; If it is not active, the script automatically releases the Ctrl key.
 ; This allow to switch to another app without worrying about the Ctrl key being pressed.
+
 SetTimer(IsAppWindowActive)
 IsAppWindowActive() {
     state := WinActive(DeviceName)
