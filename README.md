@@ -122,14 +122,12 @@ The secondary and ultimate abilities are already implemented in the game.
 
 # Configuration
 - As the script is written in AutoHotkey (AHK), it is highly recommended to have at least a basic understanding of this programming language, particularly the variables, to quickly configure hotkeys and click location coordinates.
-
 - The script uses values specific to the device's resolution, which in this case is 1080 x 2400.
-
 - Despite many mobile devices have screen resolutions that are close to this size. It's important to adjust the values in the script's constant section based on the resolution of your specific mobile or tablet.
-
 - The click location coordinates used in the script are obtained from AHK Spy, a tool that is included with AHK.
+- The **Client** mouse position is the one that matters to the script
 
-<p align="center"><img src="https://user-images.githubusercontent.com/8851260/236588179-f2fe404e-12d1-4f1d-b4d0-5669aa1c77e7.png" alt="AHKv2 Window Spy" title="AHKv2 Window Spy"><br/><em>Window Spy for AHKv2</em></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/8851260/236707944-78d8ec55-6569-40c6-8dd1-9641d9a27582.jpg" alt="AHKv2 Window Spy" title="AHKv2 Window Spy"><br/><em>Window Spy for AHKv2</em></p>
 
 <a name="Script-constants-section"></a>
 ## Script constants section
@@ -148,10 +146,9 @@ HotIfWinActive DeviceName
 ; These values are obtained from the AHK Window spy.
 ; The values need to be adjusted to match your mobile device's resolution.
 DPadCenter := { x: 216, y: 742 }
-PerkScreenLocations := [perk1 := { x: 72, y: 520 }, perk2 := { x: 216, y: 520 }, perk3 := { x: 368, y: 520 }
-, perk1Sentinel := { x: 130, y: 640 }, perk2Sentinel := { x: 300, y: 640 }
-, spinningWheel := { x: 216, y: 864 }
-, seraphimReject := { x: 110, y: 866 }, seraphimAccept := { x: 320, y: 866 }]
+PerkScreenLocations := [
+    perk1 := { x: 108, y: 600 }, perk2 := { x: 260, y: 600 }, perk3 := { x: 348, y: 524 }
+    , seraphimReject := { x: 140, y: 868 }, seraphimAccept := { x: 280, y: 868 }]
 
 ; Hotkey map
 KeyResetControl := "Q"
@@ -176,3 +173,13 @@ The following tools were used to develop the script:
 - **Visual Studio Code**: is a free and open-source code editor developed by Microsoft. It is a powerful and versatile editor that can be used for a variety of programming languages, including AutoHotkey.
 
 - **VSCode extension: AutoHotkey v2 Language Support**: is an extension for Visual Studio Code that provides support for AutoHotkey v2. It includes syntax highlighting, code completion, and linting.
+
+
+# References
+If you want to learn more about `scrcpy` and how to get the most out of it, check out this helpful playlist that covers a wide range of topics:
+
+https://www.youtube.com/playlist?list=PL2IcGP6tqTobWv4aVJWGw41q5k5TriX-d
+
+It ontains a variety of videos that provide detailed guidance on how to enable Wi-Fi, choose the video codec, change the bitrate, set max fps, troubleshoot crashes, and more.
+
+By following the tips and tricks outlined in these videos, you'll be able to customize `scrcpy` to meet your specific needs.
